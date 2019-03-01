@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>订单</title>
+    <link href="css/order-form.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src=""></script>
+    <style>
+	.shopping_tit{height:31px; background:url(img/order-form/shopping_bg.jpg) left top repeat-x;  color:#444444; font:16px/31px "Microsoft YaHei", "微软雅黑"; text-indent:12px; border-bottom:#E3E3E3 solid 1px;}
+    </style>
+</head>
+
+<body>
+
+
+<div class="shoppingCart comWidth">
+	<div class="shopping_item">
+		<h3 class="shopping_tit">收货地址</h3>
+		<div class="shopping_cont padding_shop">
+			<ul class="shopping_list">
+				<li><span class="shopping_list_text">选择地区：</span>
+					<div class="select">
+                    <select  name="bmon">
+                    <option  value="选项值"  selected="selected" name="user_city">请选择</option>
+                    <option value="0">北京</option>
+                    <option value="0">上海</option>
+                    <option value="0">深圳</option>
+                    <option value="0">广州</option>
+                    <option value="0">山西</option>
+                    <option value="0">陕西</option>
+                    <option value="0">重庆</option>
+                    </select>
+					</div>
+
+				</li>
+				<li><span class="shopping_list_text">详细地址：</span><input type="text" value="" class="input input_b"></li>
+				<li><span class="shopping_list_text">收 货 人：</span><input type="text" value="" class="input"></li>
+				<li><span class="shopping_list_text">手	机：</span><input type="text" value="" class="input"><span class="cart_tel">&nbsp;或固定电话：</span><input type="text" class="input input_s"><span class="jian">-</span><input type="text" class="input input_s2"><span class="jian">-</span><input type="text" class="input input_s2"></li>
+			
+			</ul>
+	     </div>
+	</div>
+	<div class="hr_25"></div>
+	<div class="shopping_item">
+    <form method="post" action="">
+		<h3 class="shopping_tit">支付方式</h3>
+		<div class="shopping_cont padding_shop">
+			<ul="shopping_list">
+				<li><input type="checkbox" class="radio" value="wei" >微信支付</li>
+				<li><input type="checkbox" class="radio" value="zhi" >支付宝支付</li>
+                <li><input type="checkbox" class="radio" value="ka" >银行卡支付</li>
+			</ul>
+		</div>
+        </form>
+	</div>
+	<div class="hr_25"></div>
+	<div class="shopping_item">
+		<h3 class="shopping_tit">送货清单<a href="shopping-cart.html" class="backCar">返回购物车修改</a></h3>
+		<div class="shopping_cont pb_10">
+			<div class="cart_inner">
+				<div class="cart_head clearfix">
+					<div class="cart_item t_name">商品名称</div>
+					<div class="cart_item t_price">单价</div>
+                    <div class="cart_item t_integral">积分</div>
+					<div class="cart_item t_num">数量</div>
+                  
+					<div class="cart_item t_subtotal">小计</div>
+				</div>
+                
+				<div class="cart_cont clearfix">
+					<div class="cart_item t_name">
+						<div class="cart_shopInfo clearfix">
+							<img src="img/hjy/bg3.png" alt="">
+							<div class="goods">
+                             C语言：从入门到放弃
+							</div>
+						</div>
+					</div>
+					<div class="cart_item t_price price">
+						¥35.00
+					</div>
+                      <div class="cart_item t_integral">10</div>
+					<div class="cart_item t_num number">2</div>
+					<div class="cart_item t_subtotal t_red sum">小计</div>
+				</div>
+                
+         
+				
+	<div class="hr_25"></div>
+	<div class="shopping_item">
+		<h3 class="shopping_tit">订单结算</h3>
+		<div class="shopping_cont padding_shop clearfix">
+			<div class="cart_count fr">
+				<div class="cart_rmb">
+					<i>总计：</i><span>￥145</span>
+				</div>
+				<div class="cart_btnBox">
+					<input type="button" class="cart_btn" value="提交订单">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

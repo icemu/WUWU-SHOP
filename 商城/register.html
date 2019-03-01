@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="UTF-8">
+<title>注册</title>
+    <link href="css/register.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="js/register.js"></script>
+
+</head>
+
+<body>
+<table class="main" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="hr_1">新用户注册</td>
+  </tr>
+  <tr>
+    <td style="height:10px;"></td>
+  </tr>
+  <form action="" method="post" name="myform">
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="left">用户名：</td>
+    <td class="center"><input id="user" type="text" class="in" onblur="checkUser()" name="user_name"/></td>
+    <td><div id="user_prompt">用户名由4-16位英文字母和数字组成，以字母开头</div></td>
+  </tr>
+ <tr>
+  	<form method="post" action="">
+<td class="left">性别：</td>
+   <td> <input name="gen" type="radio" value="男" class="input" checked="checked" name="user_sex" />男&nbsp;&nbsp;&nbsp;
+ <input name="gen" type="radio" value="女" class="input" />女</td>
+</form>
+<tr>
+
+  <tr>
+    <td class="left">密码：</td>
+    <td class="center"><input id="pwd" type="password" class="in" onblur="checkPwd()" name="user_pwd"/></td>
+    <td><div id="pwd_prompt">密码由英文字母和数字组成的6位以上字符</div></td>
+  </tr>
+  <tr>
+    <td class="left">确认密码：</td>
+    <td class="center"><input id="repwd" type="password" class="in" onblur="checkRepwd()" name="user_pwd"/></td>
+    <td><div id="repwd_prompt"></div></td>
+  </tr>
+   <tr>
+    <td class="left">电子邮箱：</td>
+    <td class="center"><input id="email" type="text" class="in" onblur="checkEmail()" name="user_mail/></td>
+    <td><div id="email_prompt"></div></td>
+  </tr>
+    <tr>
+    <td class="left">手机号码：</td>
+    <td class="center"><input id="mobile" type="text" class="in" onblur="checkMobile()" name="user_phone"/></td>
+    <td><div id="mobile_prompt"></div></td>
+  </tr>
+  <tr>
+  <td class="left">居住城市：</td>
+  <td>
+  <select  name="bmon">
+<option  value="选项值"  selected="selected" name="user_city">请选择</option>
+     <option value="0">北京</option>
+     <option value="0">上海</option>
+     <option value="0">深圳</option>
+     <option value="0">广州</option>
+     <option value="0">山西</option>
+     <option value="0">陕西</option>
+     <option value="0">重庆</option>
+</select>
+  </td>
+  </tr>
+     <tr>
+    <td class="left">协议：</td>
+    <td class="center"><textarea name="content" cols="25" rows="6" readonly>
+   确定之前请认真阅读此协议，如有疑问，请向客服咨询……
+</textarea></td>
+    <td></td>
+  </tr>
+  
+  
+   <tr>
+    <td class="left"></td>
+    <td class="center"><input name="agree" type="checkbox" />我认真阅读并接受以上协议</td>
+    <td></td>
+  </tr>
+    </table>
+  </form>
+
+
+    <button>注册</button>
+
+  
+  </table>
+  </form>
+</body>
+</html>

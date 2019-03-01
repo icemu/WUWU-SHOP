@@ -1,0 +1,143 @@
+ dl dd{margin: 0 auto;padding: 0;}
+        a{text-decoration: none;color: inherit;padding: 1em;vertical-align: middle}
+        a:hover{color: #C40000;}
+        div a{padding: 0;}
+        .under dl{display: inline-block;padding-left:50px;padding-right: 96px;position: relative;float: left;width: 100px;}
+
+.big{
+            width:800px;
+            height:300px;
+            position: absolute;;
+            margin-left:350px;
+            margin-top:30px;
+
+
+        } 
+		         .left{
+            width:35%;
+            height:300px; 
+            float:left;
+
+
+        } 
+		         .right{
+            width:65%;
+            height:300px;
+            float:left;
+
+		}
+		.title{
+		font-size: 18px;
+        font-family: 微软雅黑;
+	    font-weight: bold;
+
+		}
+		
+		.price1{
+        float:left;
+		 font-size: 13px;
+        font-family: 微软雅黑;
+		}
+		.price2{
+		font-size: 18px;
+        font-family: 微软雅黑;
+	    font-weight: bold;
+		color: #CC0000;
+		float:left;
+		
+		}
+		.sort1{
+			float:left;
+			 font-size: 13px;
+        font-family: 微软雅黑;
+			}
+			
+		.sort2{
+			float:left;
+			 font-size: 13px;
+        font-family: 微软雅黑;
+			}
+				
+		.num1{
+			float:left;
+			 font-size: 13px;
+        font-family: 微软雅黑;
+			}
+			
+		.num2{
+			float:left;
+			}
+		.select{
+			font-size: 13px;
+        font-family: 微软雅黑;
+			float:left;
+			}
+						
+		.hand{
+		cursor:pointer;
+		}
+
+
+.bt1{
+		width: 120px;
+        height: 35px;
+        font-size: 14px;
+        font-family: 华文黑体 ;
+        letter-spacing: 8px;
+        padding-left: 12px;
+		border-radius: 5px;
+		border: 1px solid #C40000;
+		background: -webkit-linear-gradient(top,#C40000,#CC0000);
+        color: #fff;
+        position: absolute; right: 390px;
+		font-weight: bold;
+}
+.bt1:hover{
+   background: -webkit-linear-gradient(top,#C43131,#C43131);
+  
+}
+.bt2{
+		width: 140px;
+        height: 35px;
+        font-size: 14px;
+        font-family:华文黑体;
+        letter-spacing: 8px;
+        padding-left: 12px;
+		border-radius: 5px;
+		border: 1px solid #C40000;
+		background: -webkit-linear-gradient(top,#C40000,#CC0000);
+        color: #fff;
+        position: absolute; right: 230px;
+		font-weight: bold;
+}
+		
+.bt2:hover{
+   background: -webkit-linear-gradient(top,#C43131,#C43131);
+  
+}
+
+
+#sel1{color:#333; border:#CCC solid 1px; float:left;  margin-right:15px;
+        width: 60px; height: 25px;
+		text-align:center;
+		line-height:25px;
+        font-size: 13px;
+        font-family: 微软雅黑;
+}
+
+#sel2{color:#333;float:left;border:#CCC solid 1px; margin-right:15px;
+        font-size: 13px;
+        font-family: 微软雅黑;
+		width: 60px; height: 25px;
+		text-align:center;
+		line-height:25px;
+        font-size: 13px;
+		}
+#sel3{color:#333;float:left;border:#CCC solid 1px; margin-right:15px;
+        font-size: 13px;
+        font-family: 微软雅黑;
+		width: 60px; height: 25px;
+		text-align:center;
+		line-height:25px;
+        font-size: 13px;
+		}

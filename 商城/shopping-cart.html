@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>购物车</title>
+<link href="css/myCart.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="js/myCart.js"></script>
+</head>
+
+<body>
+<header style="width: 1230px;line-height:2.5em;margin:0 auto;height: 34px;font-size: 12px;">
+        <div style="display: inline;">
+            <span style="padding-right: 1em">欢迎来無物</span> <a href="login.html" target="_blank">请登录</a> <a href="register.html" target="_blank">免费注册</a>
+        </div>
+        <div style="float: right">
+           <a href="shop.html" target="_blank">首页</a> <a href="shopping-cart.html" target="_blank">购物车</a> 
+            <a href="order-form.html">我的订单</a> 
+        </div>
+</header>
+
+<div style="text-align:center;background: #C40000;color:#FFF;font-size: 18px;font-family: 微软雅黑;font-weight: bold;line-height: 30px;" id="title">
+<p>查看购物车</p>
+</div>
+
+<div id="content">
+ <table width="100%" border="0" cellspacing="0" cellpadding="0" id="shopping">
+ <form action="" method="post" name="myform">
+  <tr>
+    <td class="title_1"><input id="allCheckBox" type="checkbox" value="" onclick="selectAll()" />全选</td>
+    <td class="title_2" colspan="2">店铺宝贝</td>
+    <td class="title_3">获积分</td>
+    <td class="title_4">单价（元）</td>
+    <td class="title_5">数量</td>
+    <td class="title_6">小计（元）</td>
+    <td class="title_7">操作</td>
+  </tr>
+  <tr>
+    <td colspan="8" class="line"></td>
+  </tr>
+  <tr>
+    <td colspan="8" class="shopInfo">店铺：<a href="#">程序员之家</a>    卖家：<a href="#">在秃头的边缘试探</a> </td>
+  </tr>
+   <tr id="product1">
+    <td class="cart_td_1"><input name="cartCheckBox" type="checkbox" value="product1" onclick="selectSingle()" /></td>
+    <td class="cart_td_2" width="130px" height="150px"><img src="img/hjy/bg3.png" alt="shopping" width="130px" height="150px"/></td>
+    <td class="cart_td_3"><a href="#">C语言：从入门到放弃</a> "基础版"<br />
+    <td class="cart_td_4">5</td>
+    <td class="cart_td_5">35.00</td>
+    <td class="cart_td_6"> <img src="img/cart/minus.jpg" alt="minus" onclick="changeNum('num_1','minus')" class="hand"/> <input id="num_1" type="text"  value="1" class="num_input" readonly="readonly"/> <img src="img/cart/adding.jpg" alt="add" onclick="changeNum('num_1','add')"  class="hand"/> </td>
+    <td class="cart_td_7"></td>
+    <td class="cart_td_8"><a href="javascript:deleteRow('product1');">删除</a></td>
+  </tr>
+  
+  <tr>
+    <td colspan="8" class="shopInfo">店铺：<a href="#">YIXI</a>    卖家：<a href="#">一依</a> </td>
+  </tr>
+   <tr id="product2">
+    <td class="cart_td_1"><input name="cartCheckBox" type="checkbox" value="product2" onclick="selectSingle()" /></td>
+    <td class="cart_td_2" width="130px" height="150px"><img src="img/hjy/bg8.jpg" alt="shopping" width="130px" height="150px"/></td>
+    <td class="cart_td_3"><a href="#">夏季鱼尾波点半身裙</a> "M"<br />
+    <td class="cart_td_4">12</td>
+    <td class="cart_td_5">79.00</td>
+    <td class="cart_td_6"> <img src="img/cart/minus.jpg" alt="minus" onclick="changeNum('num_2','minus')" class="hand"/> <input id="num_2" type="text"  value="1" class="num_input" readonly="readonly"/> <img src="img/cart/adding.jpg" alt="add" onclick="changeNum('num_2','add')"  class="hand"/> </td>
+    <td class="cart_td_7"></td>
+    <td class="cart_td_8"><a href="javascript:deleteRow('product2');">删除</a></td>
+  </tr>
+  
+   <tr>
+    <td colspan="8" class="shopInfo">店铺：<a href="#">梅子时节雨</a>    卖家：<a href="#">果果</a> </td>
+  </tr>
+   <tr id="product3">
+    <td class="cart_td_1"><input name="cartCheckBox" type="checkbox" value="product3"  onclick="selectSingle()"/></td>
+    <td class="cart_td_2" width="130px" height="150px"><img src="img/hjy/hjy5.jpg" alt="shopping" width="130px" height="150px"/></td>
+    <td class="cart_td_3"><a href="#">大兴安岭野生蓝莓</a> "顺丰空运"<br />
+    <td class="cart_td_4">3</td>
+    <td class="cart_td_5">29.00</td>
+    <td class="cart_td_6"><img src="img/cart/minus.jpg" alt="minus" onclick="changeNum('num_3','minus')" class="hand"/> <input id="num_3" type="text"  value="1" class="num_input" readonly="readonly"/> <img src="img/cart/adding.jpg" alt="add" onclick="changeNum('num_3','add')"  class="hand"/> </td>
+    <td class="cart_td_7"></td>
+    <td class="cart_td_8"><a href="javascript:deleteRow('product3');">删除</a></td>
+  </tr>
+  
+  
+  
+   <tr>
+   <td  colspan="3"><a href="javascript:deleteSelectRow()"><img src="img/cart/del.jpg" alt="delete"/></a></td>
+    <td colspan="5" class="shopend">商品总价（不含运费）：<label id="total" class="yellow"></label> 元<br />
+    可获积分 <label class="yellow" id="integral"></label> 点<br />
+    <button>立即购买</span></button></td>
+  </tr>
+  </form>
+</table>
+</div>
+<div id="title"></div>
+</body>
+</html>

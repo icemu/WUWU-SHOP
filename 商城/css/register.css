@@ -1,0 +1,74 @@
+/* CSS Document */
+
+body{
+	margin:0;
+	padding:0;
+	font-size:12px;
+	line-height:40px;
+}
+.main{
+	width:550px;
+	margin-left:auto;
+	margin-right:auto;
+	}
+.hr_1 {
+        font-size: 18px;
+        font-family: 微软雅黑;
+	font-weight: bold;
+	color: #CC0000;
+	height: 70px;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #CC0000;
+	vertical-align:bottom;
+	padding-left:px;
+}
+.left{
+	text-align:right;
+	width:100px;
+	height:25px;
+        font-size: 15px;
+        font-family: 微软雅黑;
+	padding-right:5px;
+	}
+	
+.center{
+	width:200px;
+	}
+.in{
+	width:180px;
+	height:25px;
+	border-radius:5px;
+	border:solid 2px #C40000;
+	}
+
+.red{
+	color:#cc0000;
+	font-weight:bold;
+	}
+
+div{
+	color:#999999;
+	width:270px
+	}
+	
+	
+	button {
+		width: 100px;
+        height: 30px;
+        font-size: 18px;
+        font-family: 华文黑体;
+        letter-spacing: 8px;
+        padding-left: 12px;
+		border-radius: 5px;
+		border: 1px solid #C40000;
+		background: -webkit-linear-gradient(top,#C40000,#CC0000);
+        color: #fff;
+        position: absolute; left: 540px;
+		font-weight:bold;
+}
+
+button:hover{
+   background: -webkit-linear-gradient(top,#C43131,#C43131);
+  
+}
